@@ -7,8 +7,8 @@ import auth from '../../../firebase.init';
 import { useNavigate } from 'react-router-dom';
 
 const SocailLogin = () => {
-    const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
-    const [signInWithGithub, userhub, loadinghub, errorhub] = useSignInWithGithub(auth);
+    const [signInWithGoogle, user, error] = useSignInWithGoogle(auth);
+    const [signInWithGithub, userhub, errorhub] = useSignInWithGithub(auth);
 
 
     const navigate = useNavigate();
